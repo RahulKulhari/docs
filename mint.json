@@ -149,12 +149,6 @@
         "api-reference/schemas/get-schema-html",
         "api-reference/schemas/get-schema"
       ]
-    },
-    {
-      "group": "API Reference",
-      "pages": [
-        "api-reference/root"
-      ]
     }
   ],
   "footerSocials": {
