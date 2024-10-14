@@ -125,13 +125,6 @@
       ]
     },
     {
-      "group": "Jira",
-      "pages": [
-        "api-reference/jira/create-jira-events",
-        "api-reference/jira/get-learnability-metrics"
-      ]
-    },
-    {
       "group": "Skill events",
       "pages": [
         "api-reference/skill-events/create-skill-event",
