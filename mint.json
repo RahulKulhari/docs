@@ -52,7 +52,7 @@
       ]
     },
     {
-      "group": "functions",
+      "group": "Functions",
       "pages": [
         "api-reference/functions/list-functions",
         "api-reference/functions/create-function",
@@ -63,7 +63,7 @@
       ]
     },
     {
-      "group": "skill categories",
+      "group": "Skill categories",
       "pages": [
         "api-reference/skill-categories/list-skill-categories",
         "api-reference/skill-categories/create-skill-category",
@@ -74,7 +74,7 @@
       ]
     },
     {
-      "group": "skills",
+      "group": "Skills",
       "pages": [
         "api-reference/skills/list-skills",
         "api-reference/skills/create-skill",
@@ -85,7 +85,7 @@
       ]
     },
     {
-      "group": "taxonomy",
+      "group": "Taxonomy",
       "pages": [
         "api-reference/taxonomy/create-taxonomy",
         "api-reference/taxonomy/read-taxonomy",
@@ -107,13 +107,13 @@
       ]
     },
     {
-      "group": "Async Task",
+      "group": "Async Task Tracker",
       "pages": [
         "api-reference/async-task/fetch-job"
       ]
     },
     {
-      "group": "employee",
+      "group": "Employee",
       "pages": [
         "api-reference/employee/create-employee",
         "api-reference/employee/read-employee",
@@ -125,14 +125,14 @@
       ]
     },
     {
-      "group": "jira",
+      "group": "Jira",
       "pages": [
         "api-reference/jira/create-jira-events",
         "api-reference/jira/get-learnability-metrics"
       ]
     },
     {
-      "group": "skill events",
+      "group": "Skill events",
       "pages": [
         "api-reference/skill-events/create-skill-event",
         "api-reference/skill-events/read-skill-event",
@@ -144,7 +144,7 @@
       ]
     },
     {
-      "group": "schemas",
+      "group": "Schemas",
       "pages": [
         "api-reference/schemas/get-schema-html",
         "api-reference/schemas/get-schema"
