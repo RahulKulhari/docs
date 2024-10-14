@@ -19,11 +19,16 @@
   "topbarCtaButton": {
     "name": "Get API Key",
     "url": "https://your-api-key-page.com"
-  },"tabs": [
+  },
+  "tabs": [
     {
       "name": "API Reference",
       "url": "api-reference"
     }
+  ],
+  "openapi": [
+    "job_openapi.json",
+    "taxonomy_api_openapi.json"
   ],
   "anchors": [
     {
@@ -40,104 +45,115 @@
   "navigation": [
     {
       "group": "Getting Started",
-      "pages": ["introduction", "authentication", "example_usage"]
-    },
-    {
-      "group": "Skills",
       "pages": [
-        "api-reference/skills/create-skill",
-        "api-reference/skills/list-skills",
-        "api-reference/skills/read-skill",
-        "api-reference/skills/update-skill",
-        "api-reference/skills/delete-skill"
+        "introduction",
+        "authentication",
+        "example_usage"
       ]
     },
     {
-      "group": "Skill Categories",
+      "group": "functions",
       "pages": [
-        "api-reference/skill-categories/create-skill-category",
-        "api-reference/skill-categories/list-skill-categories",
-        "api-reference/skill-categories/read-skill-category",
-        "api-reference/skill-categories/update-skill-category",
-        "api-reference/skill-categories/delete-skill-category"
-      ]
-    },
-    {
-      "group": "Functions",
-      "pages": [
-        "api-reference/functions/create-function",
         "api-reference/functions/list-functions",
+        "api-reference/functions/create-function",
         "api-reference/functions/read-function",
         "api-reference/functions/update-function",
-        "api-reference/functions/delete-function"
+        "api-reference/functions/delete-function",
+        "api-reference/functions/search-functions"
       ]
     },
     {
-      "group": "Taxonomy",
+      "group": "skill categories",
+      "pages": [
+        "api-reference/skill-categories/list-skill-categories",
+        "api-reference/skill-categories/create-skill-category",
+        "api-reference/skill-categories/read-skill-category",
+        "api-reference/skill-categories/update-skill-category",
+        "api-reference/skill-categories/delete-skill-category",
+        "api-reference/skill-categories/search-skill-categories"
+      ]
+    },
+    {
+      "group": "skills",
+      "pages": [
+        "api-reference/skills/list-skills",
+        "api-reference/skills/create-skill",
+        "api-reference/skills/read-skill",
+        "api-reference/skills/update-skill",
+        "api-reference/skills/delete-skill",
+        "api-reference/skills/search-skills"
+      ]
+    },
+    {
+      "group": "taxonomy",
       "pages": [
         "api-reference/taxonomy/create-taxonomy",
         "api-reference/taxonomy/read-taxonomy",
         "api-reference/taxonomy/update-taxonomy",
-        "api-reference/taxonomy/delete-taxonomy"
+        "api-reference/taxonomy/delete-taxonomy",
+        "api-reference/taxonomy/search-taxonomies"
       ]
     },
     {
       "group": "Job",
       "pages": [
+        "api-reference/job/fetch-job",
         "api-reference/job/create-job",
         "api-reference/job/delete-job",
-        "api-reference/job/fetch-job",
-        "api-reference/job/list-jobs",
         "api-reference/job/update-job",
-        "api-reference/job/get-jobs-count"
+        "api-reference/job/get-jobs-count",
+        "api-reference/job/list-jobs",
+        "api-reference/job/search-job"
       ]
     },
     {
-      "group": "Employee",
+      "group": "Async Task",
+      "pages": [
+        "api-reference/async-task/fetch-job"
+      ]
+    },
+    {
+      "group": "employee",
       "pages": [
         "api-reference/employee/create-employee",
-        "api-reference/jira/create-jira-events",
         "api-reference/employee/read-employee",
+        "api-reference/employee/get-employee-count",
+        "api-reference/employee/update-employee",
         "api-reference/employee/list-employees",
         "api-reference/employee/delete-employee",
-        "api-reference/employee/get-employee-count"
-      ]
-    },
-    {
-      "group": "SkillEvents",
-      "pages": [
-        "api-reference/skill-events/create-skill-event",
-        "api-reference/skill-events/update-skill-event",
-        "api-reference/skill-events/delete-skill-event",
-        "api-reference/skill-events/read-skill-event",
-        "api-reference/skill-events/list-skill-events",
-        "api-reference/skill-events/skill-events-count",
-        "api-reference/skill-events/employee-skill-events-info"
-      ]
-    },
-    {
-      "group": "Search",
-      "pages": [
-        "api-reference/skills/search-skills",
-        "api-reference/skill-categories/search-skill-categories",
-        "api-reference/functions/search-functions",
-        "api-reference/taxonomy/search-taxonomies",
-        "api-reference/job/search-jobs",
         "api-reference/employee/search-employees"
       ]
     },
     {
-      "group": "Schemas",
+      "group": "jira",
       "pages": [
-
-        "api-reference/schemas/skill",
-        "api-reference/schemas/skill_category",
-        "api-reference/schemas/function",
-        "api-reference/schemas/taxonomy",
-        "api-reference/schemas/job",
-        "api-reference/schemas/employee",
-        "api-reference/schemas/get-schema-html"
-
+        "api-reference/jira/create-jira-events",
+        "api-reference/jira/get-learnability-metrics"
+      ]
+    },
+    {
+      "group": "skill events",
+      "pages": [
+        "api-reference/skill-events/create-skill-event",
+        "api-reference/skill-events/read-skill-event",
+        "api-reference/skill-events/update-skill-event",
+        "api-reference/skill-events/delete-skill-event",
+        "api-reference/skill-events/list-skill-events",
+        "api-reference/skill-events/skill-events-count",
+        "api-reference/skill-events/get-employee-skill-info"
+      ]
+    },
+    {
+      "group": "schemas",
+      "pages": [
+        "api-reference/schemas/get-schema-html",
+        "api-reference/schemas/get-schema"
+      ]
+    },
+    {
+      "group": "API Reference",
+      "pages": [
+        "api-reference/root"
       ]
     }
   ],
@@ -147,9 +163,12 @@
     "linkedin": "https://www.linkedin.com/company/yourcompany"
   },
   "api": {
-    "baseUrl": "https://ds--dev--employee--api.edgenetworks.ai",
-    "auth": {
-      "method": "bearer"
-    },"playground": {"disableProxy": true}
+    "baseUrl": [
+      "https://ds--dev--employee--api.edgenetworks.ai",
+      "https://ds--dev--vacancy--api.edgenetworks.ai"
+    ],
+    "playground": {
+      "disableProxy": true
+    }
   }
 }
