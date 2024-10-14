@@ -142,13 +142,6 @@
         "api-reference/skill-events/skill-events-count",
         "api-reference/skill-events/get-employee-skill-info"
       ]
-    },
-    {
-      "group": "Schemas",
-      "pages": [
-        "api-reference/schemas/get-schema-html",
-        "api-reference/schemas/get-schema"
-      ]
     }
   ],
   "footerSocials": {
